@@ -9,6 +9,6 @@ public class MainPlanner {
         dailyPlanner.removeActivity(Days.FRIDAY, "fotbal");
         System.out.println(dailyPlanner);
 
-        System.out.println(dailyPlanner.getActivies(Days.FRIDAY));
+        System.out.println(dailyPlanner.getActivies(Days.SATURDAY));
     }
 }

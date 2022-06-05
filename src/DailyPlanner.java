@@ -46,7 +46,9 @@ public class DailyPlanner {
     public List<String> getActivies(Days day) {
         List<String> activities = new ArrayList<>();
         for (DaySchedule daySchedule : dailySchedule) {
-            activities.add(String.valueOf(daySchedule.getActivities()));
+            if (daySchedule.getDay().equals(day)) {
+                activities.add(String.valueOf(daySchedule.getActivities()));
+            }
         }
         return activities;
     }
